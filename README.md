@@ -33,3 +33,14 @@ Here first it computes mn=v - (s')*u  which when simplified results in mn=(e')*r
 This gives an interesting decryption scheme.  
 We decrypt the coefficient as '1' if it close to q/2 and as '0' if it is more close to 0 or q.  
 ![image](https://github.com/7h4nd5RG0d/Baby-Kyber/assets/128285431/a3401d67-d137-42ca-86c0-9c15ba6b73ad)  
+
+## Ouput:  
+### Case 1: Default meaning pmod=x^4+1  
+Therefore there are only 16 possible characters that can be encrypted as after that we get many to one encryption making it impossible to decrypt.  
+Here the code only allows 0-9 as input to avoid it.  
+![image](https://github.com/7h4nd5RG0d/Baby-Kyber/assets/128285431/f92b9c2c-afee-4b53-9b09-f700e872bb3d)  
+### Case 2: using pmod with degree 5.
+Therefore we have 32 possible characters during encryption.  
+Here the code will only allow a-z as a constraint.  
+
+
